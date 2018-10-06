@@ -1,0 +1,29 @@
+:root {
+  --main-text-color: #fff;
+  --secondary-text-color: #3a4d60;
+  --features-section-bg-color: #2e3b4e;
+}
+
+body {
+  background: url(../img/background.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+header.header-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header-item.header-logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav.nav-bar {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  color: var(--main-text-color);
+}
