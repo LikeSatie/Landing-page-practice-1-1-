@@ -11,6 +11,8 @@ font-family: 'Open Sans', sans-serif;
   --features-section-bg-color: #2e3b4e;
   /*fonts*/
   --main-text-font: "Open Sans", sans-serif;
+  --main-header-font-size: 1.4rem;
+  --main-paragraph-font-size: 1rem;
 }
 
 body {
@@ -130,7 +132,7 @@ nav.nav-bar {
 
 .article-item-header {
   text-align: right;
-  font-size: 2.5rem;
+  font-size: var(--main-header-font-size);
   font-weight: 300;
   line-height: 3.5rem;
 }
@@ -150,7 +152,7 @@ nav.nav-bar {
 
 .article-item-paragraph {
   padding-right: 1.25rem;
-  font-size: 0.69rem;
+  font-size: var(--main-paragraph-font-size);
   font-weight: 300;
   color: rgba(255, 255, 255, 0.6);
 }
@@ -158,7 +160,7 @@ nav.nav-bar {
 .blur-container {
   width: 100%;
   height: 5vh;
-  margin-top: 13.6rem;
+  margin-top: 18.3rem;
   background: rgba(255, 255, 255, 0.1);
   background: -webkit-linear-gradient(
     top,
@@ -182,6 +184,7 @@ nav.nav-bar {
 }
 
 .features-container {
+  height: 45vh;
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
@@ -190,17 +193,17 @@ nav.nav-bar {
     "first second"
     "third fourth";
   margin: 0 20rem;
-  padding: 2rem 0;
+  padding: 1.5rem 0;
   font-family: var(--main-text-font);
   color: var(--main-text-color);
 }
 
 .features-item h3 {
-  font-size: 1rem;
+  font-size: var(--main-header-font-size);
 }
 
 .features-item p {
-  font-size: 0.9rem;
+  font-size: var(--main-paragraph-font-size);
   font-weight: 300;
   line-height: 1.6rem;
 }
@@ -219,4 +222,44 @@ nav.nav-bar {
 
 .features-item.fourth {
   grid-area: fourth;
+}
+
+.pink-background-container {
+  position: relative;
+}
+
+.pink {
+  height: 32vh;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  padding: 5rem 30rem 3rem 30rem;
+  text-align: center;
+  background: url(../img/pink-background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  box-shadow: inset 0 0 0 1000px rgba(231, 82, 107, 0.9);
+  font-family: "Open Sans", sans-serif;
+  color: var(--main-text-color);
+}
+
+.pink h3 {
+  font-size: calc(var(--main-header-font-size) + 0.2rem);
+  font-weight: 300;
+}
+
+.pink p {
+  font-size: var(--main-paragraph-font-size);
+  font-weight: 300;
+}
+
+.pink input {
+  margin: 1rem 0 0 0;
+  padding: 1rem 5rem;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  color: rgb(231, 82, 107);
 }
