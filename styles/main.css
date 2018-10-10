@@ -263,3 +263,15 @@ nav.nav-bar {
   font-family: "Open Sans", sans-serif;
   color: rgb(231, 82, 107);
 }
+
+.about {
+  height: 50vh;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+}
+
+.about img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
