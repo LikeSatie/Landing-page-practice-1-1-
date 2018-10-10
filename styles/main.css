@@ -152,15 +152,15 @@ nav.nav-bar {
 
 .article-item-paragraph {
   padding-right: 1.25rem;
-  font-size: var(--main-paragraph-font-size);
+  font-size: calc(var(--main-paragraph-font-size) - 0.3rem);
   font-weight: 300;
-  color: rgba(255, 255, 255, 0.6);
+  color: rgba(255, 255, 255, 0.4);
 }
 
 .blur-container {
   width: 100%;
   height: 5vh;
-  margin-top: 18.3rem;
+  margin-top: 19.3rem;
   background: rgba(255, 255, 255, 0.1);
   background: -webkit-linear-gradient(
     top,
@@ -265,7 +265,7 @@ nav.nav-bar {
 }
 
 .about {
-  height: 40vh;
+  height: 50vh;
   display: grid;
   grid-template-columns: 1fr 2fr;
   grid-template-rows: 1fr;
@@ -420,4 +420,88 @@ nav.nav-bar {
   align-self: center;
   margin-left: 0.75rem;
   font-weight: 300;
+}
+
+.about-us-second {
+  height: 50vh;
+}
+
+.about-us-second-container {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: 1fr;
+  grid-template-areas: "text image";
+  margin: 0;
+  font-family: var(--main-text-font);
+}
+
+.about-us-second-item.text {
+  grid-area: text;
+  padding: 6rem 6rem 4.3rem 8rem;
+}
+
+.about-us-second-item.text h3 {
+  text-transform: uppercase;
+  font-size: calc(var(--main-header-font-size) - 0.3rem);
+}
+
+.about-us-second-item.text p {
+  font-size: var(--main-paragraph-font-size);
+  line-height: 1.6;
+}
+
+#item-appendix {
+  font-size: calc(var(--main-paragraph-font-size) - 0.2rem);
+  font-weight: 300;
+  color: #666;
+}
+
+.about-us-second-item.about-us-second-item.image {
+  grid-area: image;
+  background: url(../img/about-us-2.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.contact {
+  height: 50vh;
+  background: #e7526b;
+}
+
+.contact-container {
+  margin: 0;
+  padding: 8rem 6rem 0 8rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: center;
+  color: var(--main-text-color);
+  font-family: var(--main-text-font);
+}
+
+.contact-container h3 {
+  font-size: var(--main-header-font-size);
+}
+
+.contact-container p {
+  font-size: var(--main-paragraph-font-size);
+}
+
+.contact-container address {
+  font-style: normal;
+}
+
+.contact-container address a {
+  color: var(--main-text-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--main-text-color);
+}
+
+.footer-container {
+  height: 10vh;
+  margin: 0;
+  padding: 1.4rem 6rem 0 8rem;
+  background: #2e3b4e;
+  font-family: var(--main-text-font);
+  color: var(--main-text-color);
 }
