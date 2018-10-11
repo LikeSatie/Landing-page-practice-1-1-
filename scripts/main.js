@@ -18,6 +18,8 @@ function closeGreetModal() {
   getStartedModal.style.display = "none";
 }
 
-function closeGreetModalOutside() {
-  getStartedModal.style.display = "none";
+function closeGreetModalOutside(e) {
+  if (e.target == getStartedModal) {
+    getStartedModal.style.display = "none";
+  }
 }
