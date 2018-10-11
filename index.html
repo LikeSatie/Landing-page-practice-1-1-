@@ -8,6 +8,8 @@
   <title>Document</title>
   <link rel="stylesheet" href="styles/normalize.css">
   <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU"
+    crossorigin="anonymous">
 </head>
 
 <body>
@@ -31,7 +33,19 @@
         <h3 class="article-item-header">Designs your eyeballs will thank you for</h3>
       </section>
       <section class="article-item">
-        <input type="submit" value="Get Started Today" class="article-item-input">
+        <input type="submit" value="Get Started Today" class="article-item-input" id="getStartedBtn">
+      </section>
+      <section class="article-item-modal" id="getStartedModal">
+        <div class="modal-container">
+          <header>
+            <h3>Modal</h3>
+            <i class="far fa-times-circle"></i>
+          </header>
+          <section>
+            <p>Text</p>
+          </section>
+          <footer>Appendix</footer>
+        </div>
       </section>
       <section class="article-item">
         <p class="article-item-paragraph">Lorem ipsum dolor sit amet
@@ -135,6 +149,7 @@
   <footer class="footer-container">
     <p>All rights reserved 2018 KSKY&copy;</p>
   </footer>
+  <script src="/scripts/main.js"></script>
 </body>
 
 </html>

@@ -177,6 +177,30 @@ nav.nav-bar {
   background-color: rgb(178, 64, 255);
 }
 
+.article-item-modal {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: 0 auto;
+}
+
+.article-item-modal .modal-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.article-item-modal .modal-container header {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-end;
+}
+
+/* .article-item-modal.fa-times-circle { */
+/* display: inline-block; */
+/* } */
+
 .article-item-paragraph {
   padding-right: 1.25rem;
   font-size: calc(var(--main-paragraph-font-size) - 0.3rem);
