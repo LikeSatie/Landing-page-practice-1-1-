@@ -15,7 +15,7 @@
 <body>
   <div class="greet-container">
     <header class="header-container">
-      <div class="header-item header-logo">
+      <div class="header-item header-logo" id="header-logo-section">
         <div class="header-logo-item-img"><img src="/img/header/pex.png" alt="company-logo-image"></div>
         <div class="header-logo-item-text"><img src="/img/header/Photoshop Website template.png" alt="company-logo-text"></div>
       </div>
@@ -27,6 +27,27 @@
         <div class="nav-bar-item"><a href="#">Contact</a></div>
         <div class="nav-bar-item"><input type="search" placeholder="Search Website"></div>
       </nav>
+      <div id="responsive-menu-container">
+        <nav class="open-side-navbar">
+          <span class="open-side">
+            <a href="#" onclick="openSlideMenu()">
+              <svg id="svg-icon-nav" width="30" height="30">
+                <path d="M0,5 30,5" stroke="#fff" stroke-width="5" />
+                <path d="M0,14 30,14" stroke="#fff" stroke-width="5" />
+                <path d="M0,23 30,23" stroke="#fff" stroke-width="5" />
+              </svg>
+            </a>
+          </span>
+        </nav>
+        <div id="side-menu" class="side-nav">
+          <a href="#" id="btn-close" onclick="closeSideMenu()">&times;</a>
+          <a href="#">About</a>
+          <a href="#">How It Works</a>
+          <a href="#">Services</a>
+          <a href="#">FAQ</a>
+          <a href="#">Contact</a>
+        </div>
+      </div>
     </header>
     <article class="article-container">
       <section class="article-item">
