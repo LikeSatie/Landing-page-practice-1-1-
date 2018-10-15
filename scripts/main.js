@@ -5,8 +5,9 @@ const getStartedModal = document.getElementById('getStartedModal');
 const getStartedCloseBtn = document.getElementsByClassName(
   'fa-times-circle'
 )[0];
-const openSlideMenuBtn = document.getElementById('side-menu');
+const openSideMenuBtn = document.getElementById('side-menu');
 const closeSideMenuBtn = document.getElementById('btn-close');
+const responsivNavIcon = document.getElementById('svg-icon-nav');
 
 getStartedBtn.addEventListener('click', openGreetModal);
 getStartedCloseBtn.addEventListener('click', closeGreetModal);
@@ -26,15 +27,19 @@ function closeGreetModalOutside(e) {
   }
 }
 
-function openSlideMenu() {
-  openSlideMenuBtn.style.width = '250px';
+function openSideMenu() {
+  openSideMenuBtn.style.width = '250px';
   document.getElementById('responsive-menu-container').style.marginLeft =
     '250px';
+  responsivNavIcon.style.display = 'none';
   // console.log(314);
 }
 
 function closeSideMenu() {
-  closeSideMenuBtn.style.width = '0';
-  document.getElementById('responsive-menu-container').style.marginLeft = '0';
+  openSideMenuBtn.style.width = '0';
+  document.getElementById('responsive-menu-container').style.width = '0';
+  setTimeout(() => {
+    responsivNavIcon.style.display = 'initial';
+  }, 5);
   // console.log(314);
 }
