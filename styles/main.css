@@ -470,17 +470,21 @@ header.header-container {
   color: rgb(231, 82, 107);
 }
 
-.about {
+.main-item.about {
   height: 50vh;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 50% 50%;
   grid-template-rows: 1fr;
 }
 
-.about img {
+.about-item.image {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  background-image: url(../img/about.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  z-index: -1;
 }
 
 .about-item.text {
@@ -504,7 +508,7 @@ header.header-container {
 
 #about-item-description {
   margin-top: 0;
-  padding: 0rem 0 0 0;
+  padding: 0 0 0 0;
   font-size: calc(var(--main-paragraph-font-size) - 0.2rem);
 }
 
@@ -759,6 +763,14 @@ header.header-container {
     margin: 0 0 1rem -0.4rem;
     padding: 0 0 0 0;
   }
+
+  .pink {
+    padding: 3rem 10rem 3rem 10rem;
+  }
+
+  .about-item.text {
+    padding: 0.75rem 2.5rem 1rem 3rem;
+  }
 }
 
 @media screen and (max-width: 1024px) {
@@ -787,6 +799,19 @@ header.header-container {
     margin: 0 5rem;
     padding: 1rem 0;
     line-height: 1.4;
+  }
+
+  .about-item.text {
+    padding: 0.5rem 2.5rem 0.5rem 3rem;
+  }
+
+  .about-item.text h3 {
+    padding-bottom: 1rem;
+  }
+
+  .about-item.text #about-item-description {
+    padding: 0 0 0.5rem 0;
+    line-height: 1.8;
   }
 }
 
@@ -835,6 +860,14 @@ header.header-container {
 
   .article-item-paragraph {
     padding-right: 0;
+  }
+
+  .about-item.text {
+    padding: 0 1.5rem 0.25rem 1.5rem;
+  }
+
+  .about-item.text h3 {
+    padding-bottom: 0;
   }
 }
 
@@ -914,5 +947,27 @@ header.header-container {
 
   .features-item p {
     margin: 0rem 0 0.5rem 0;
+  }
+
+  .about-item.text {
+    padding: 0 1.5rem 0.25rem 1.5rem;
+  }
+
+  .about-item.text h3 {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: calc(var(--main-header-font-size) -0.2rem);
+  }
+
+  .about-item.text p {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    font-size: calc(var(--main-paragraph-font-size) -0.15rem);
+    line-height: 1.6;
+  }
+
+  .about-item.text #about-item-description {
+    padding: 0 0 0.5rem 0;
+    line-height: 1.6;
   }
 }
