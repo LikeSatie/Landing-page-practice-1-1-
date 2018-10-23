@@ -841,6 +841,10 @@ header.header-container {
   .about-us-second-item.text {
     padding: 2rem 6rem 4.3rem 6rem;
   }
+
+  .contact-container {
+    padding: 8rem 6rem 0 6rem;
+  }
 }
 
 @media screen and (max-width: 900px) {
@@ -920,6 +924,10 @@ header.header-container {
   .about-us-second-item.text {
     padding: 2rem 4rem 4.3rem 5rem;
   }
+
+  .contact-container {
+    padding: 8rem 6rem 0 5rem;
+  }
 }
 
 @media screen and (max-width: 800px) {
@@ -938,6 +946,10 @@ header.header-container {
 
   .about-us-second-item.text {
     padding: 2rem 2rem 4.3rem 3rem;
+  }
+
+  .contact-container {
+    padding: 8rem 6rem 0 3rem;
   }
 }
 
